@@ -12,7 +12,8 @@ endif
 "Comments
 syn region hlblComment start="/\*" end="\*/"
 syn region hlblComment start="{" end="}"
-syn region hlblRemark start="//" end="$"
+syn region hlblComment start="//" end="$"
+syn region hlblRemark start="(\*" end="\*)"
 
 "HLBL keywords
 syn keyword hlblStatement EXIT GOTO
@@ -27,8 +28,14 @@ syn keyword hlblControl MONITOR MULT_ARRAY NOT ON OP_ERR OR ORD ROUND SBXNO SECU
 syn keyword hlblControl SET_ARRAY SET_SBXS SQRT START_TIMER STATEMENTS STEPNO STMNO STOP_TIMER STRING SUBR_LEVEL
 syn keyword hlblControl SUBRNO SUBROUTINE SUM_ARRAY THEN TIMER TO TRUNC UNTIL USER_LABELS VARIABLES WHEN 
 
+"Literals
+syn keyword hlblBoolLiterals TRUE FALSE
+syn keyword hlblEnumLiterals Active Inactive Exception
+"syn match hlblNumber "\<\d\+[eE][+-]\=\d\+[jJ]\=\>"
+
 "Labels
-syn match hlblLabel "\v(<<\w>>)"
+syn match hlblUsrLabel "\v^\<\<.*\>\>$"
+syn match hlblStepLabel "\v^\$\$.*\$\$$"
 
 "Preprocessor directives
 "syn match hlblInclude "\v\#w" 
@@ -39,4 +46,5 @@ hi def link hlblStatement Statement
 hi def link hlblControl Statement
 hi def link hlblConditional Conditional
 hi def link hlblRepeat Repeat
-hi def link hlblLabel Label
+hi def link hlblUsrLabel Label
+hi def link hlblStepLabel Label

@@ -1,0 +1,58 @@
+*foxvim.txt* functionality for Foxboro IA languages and DCS configuration.
+
+             _____        __     ___                ~
+            |  ___|____  _\ \   / (_)_ __ ___       ~
+            | |_ / _ \ \/ /\ \ / /| | '_ ` _ \      ~
+            |  _| (_) >  <  \ V / | | | | | | |     ~
+            |_|  \___/_/\_\  \_/  |_|_| |_| |_|     ~
+            By - Brooks Pettit (2024)
+
+        Functionality for Foxboro IA configuration.
+    Includes syntax highlighting for languages and live configuration.
+
+================================================================================
+CONTENTS                                                          *FoxvimContents*
+
+    1. Introduction .......................... |FoxvimIntroduction|
+    2. Usage ................................. |FoxvimUsage|
+    3. Mapping ............................... |FoxvimMappings|
+    4. License ............................... |FoxvimLicense|
+    5. Bugs .................................. |FoxvimBugs|
+    6. Contributing .......................... |FoxvimContributing|
+    7. Changelog ............................. |FoxvimChangelog|
+    8. Credits ............................... |FoxvimCredits|
+
+================================================================================
+Section 1: Introduction                                       *FoxvimIntroduction*
+
+This plugin wraps the ICC Driver Task (iccdrvr.tsk.exe) included on Foxboro IA
+systems. It allows the user to navigate a hosted control database using Vim 
+buffers, and read or modify block configurations in plaintext. This leverages
+the power of vim motions for routine DCS configuration tasks: search, global
+find and replace, and much more.
+
+Additionally, FoxVim allows Instruction List programs in CALCA, CALC, and
+LOGIC blocks to be loaded into a buffer with syntax highlighting. Finally, you
+can insert new lines without having to retype the program!
+*Todo Finish Introduction
+
+================================================================================
+Section 1: Usage                                                     *FoxvimUsage*
+
+================================================================================
+Section 1: Mappings                                               *FoxvimMappings*
+
+================================================================================
+Section 1: License                                                 *FoxvimLicense*
+
+================================================================================
+Section 1: Bugs                                                       *FoxvimBugs*
+
+================================================================================
+Section 1: Contributing                                       *FoxvimContributing*
+
+================================================================================
+Section 1: Changelog                                             *FoxvimChangelog*
+
+================================================================================
+Section 1: Credits                                                 *FoxvimCredits*
