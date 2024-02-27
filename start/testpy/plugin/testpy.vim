@@ -1,6 +1,6 @@
 "test python vim plugin
 if !has('python3')
-	echo "Error: Require vim cimpiled with +python3"
+	echo "Error: Require vim compiled with +python3"
 	finish
 endif
 
